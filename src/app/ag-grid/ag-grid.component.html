@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h2 class="h2" style="text-align: center;color: aliceblue; " routerLink="/home">{{'choose_language' | translate }}
+    </h2>
+
+  </div>
+</nav>
+
+
+<button (click)="getSelectedRows()">Get Selected Rows</button>
+
+<ag-grid-angular #agGrid style="height: 90vh;width: 100%; font-size: 18px;
+display: block;" class="ag-theme-alpine" [rowData]="rowData | async" [columnDefs]="columnDefs" rowSelection="multiple">
+</ag-grid-angular>

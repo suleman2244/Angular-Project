@@ -1,0 +1,22 @@
+{
+  "posts": [],
+  "signUpUsers": [
+    {
+      "fullName": "Salman Khan",
+      "email": "sulaman54325@gmail.com",
+      "password": "Khan12",
+      "mobile": "3236313975",
+      "id": 1
+    },
+    {
+      "fullName": "Kamran Khan",
+      "email": "kamran@gmail.com",
+      "password": "Khan12",
+      "mobile": "3236313975",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

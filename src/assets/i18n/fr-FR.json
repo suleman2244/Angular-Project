@@ -1,0 +1,26 @@
+{
+  "choose_language": "Bienvenue dans l'application angulaire",
+  "info": "Ma première directive d'attribut",
+  "pick": "Choisissez une couleur de surbrillance",
+  "Highlight": "Mettez-moi en valeur!",
+  "Highlight_me": "Mettez-moi aussi en valeur !",
+  "parent": "Mon composant parent",
+  "value": "Valeur de la zone de texte enfant :",
+  "child": "Mon composant enfant",
+  "valuep": "Valeur de la zone de texte parent :",
+  "count": "Nombre de clics parent : ",
+  "parent_click": "Clic parent",
+  "crud": "CRUD",
+  "AG": "AG GRILLE",
+  "fetch": "FETCH API",
+  "log": "Se déconnecter",
+  "language.english": "Anglaise",
+  "language.french": "français",
+  "language.german": "Allemande",
+  "send": "Envoyer la zone de texte au parent",
+  "g": "verte",
+  "y": "jaune",
+  "c": "cyan",
+  "data": "DONNÉES DE L'API"
+
+}

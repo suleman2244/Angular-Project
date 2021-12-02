@@ -1,0 +1,26 @@
+{
+  "choose_language": "Welcome To Angular App",
+  "info": "My First Attribute Directive",
+  "pick": "Pick a highlight color",
+  "Highlight": "Highlight me!",
+  "Highlight_me": "Highlight me too!",
+  "parent": "My Parent Component",
+  "value": "Value of child text box :",
+  "child": "My Child Component",
+  "valuep": "Value of parent textbox :",
+  "count": "Parent click count: ",
+  "parent_click": "Parent Click",
+  "crud": "CRUD",
+  "AG": "AG GRID",
+  "fetch": "FETCH API",
+  "log": "Logout",
+  "language.english": "English",
+  "language.french": "French",
+  "language.german": "German",
+  "send": "Send textbox to parent",
+  "g": "Green",
+  "y": "Yellow",
+  "c": "Cyan",
+  "data": "DATA FROM API"
+
+}

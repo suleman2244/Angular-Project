@@ -1,0 +1,13 @@
+<div class="child-comp">
+  <input [(ngModel)]="childTextBoxValue" type="text" class="form-control">
+  <button (click)="passTextValueToParent()" type="button" class="btn btn-info">{{ "send" | translate }}</button>
+
+  <div class="txt">
+    {{ "valuep" | translate }} {{parentTextBoxValue}}
+  </div>
+
+  <div class="txt">
+    {{ "count" | translate }} {{clickCount}}
+  </div>
+
+</div>

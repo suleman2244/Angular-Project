@@ -1,0 +1,76 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h2 class="h2" style="color: aliceblue;">{{'choose_language' | translate }}</h2>
+    <div class="d-flex">
+
+
+      <select class="language-picker" (change)="selectLanguage($event)">
+        <option value="en-US">{{ 'language.english' | translate }}</option>
+        <option value="fr-FR">{{ 'language.french' | translate }}</option>
+        <!-- <option value="es">{{ 'language.german' | translate }}</option> -->
+      </select>
+
+
+      <button routerLink='/employee-dashboard' class="btn btn-primary mx-2">{{'crud'|  translate}}</button>
+      <button routerLink='/ag-grid' class="btn btn-primary mx-2">{{'AG'|  translate}}</button>
+      <button routerLink='/api' class="btn btn-primary mx-2">{{'fetch' | translate}}</button>
+      <!-- <button (click)='clickAddEmployee()' class='btn btn-primary' type="button" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">ADD
+        EMPLOYEE</button> -->
+      <!-- <app-void-button [text]="'ADD EMPLOYEE'" [btnClass]="'btn btn-primary'" (onClick)='clickAddEmployee()'
+        data-bs-target="#exampleModal" type="button" data-bs-toggle="modal">
+      </app-void-button> -->
+
+      <button (click)='logout()' routerLink='/login' class="btn btn-danger mx-2">{{'log' | translate}}</button>
+
+    </div>
+
+  </div>
+</nav>
+
+<div class='Attribute'>
+  <h1>{{"info" | translate }}</h1>
+
+  <h2>{{"pick" | translate}}</h2>
+  <div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">{{"g" | translate}}
+    <input type="radio" name="colors" (click)="color='yellow'">{{"y" | translate}}
+    <input type="radio" name="colors" (click)="color='cyan'">{{"c" | translate}}
+  </div>
+  <p [appHighlight]="color">{{"Highlight" | translate }}</p>
+
+  <p [appHighlight]="color" defaultColor="violet">
+    {{"Highlight_me" | translate }}
+  </p>
+
+  <hr />
+  <!-- <h2>Mouse over the following lines to see fixed highlights</h2>
+
+  <p [appHighlight]="'yellow'">Highlighted in yellow</p>
+  <p appHighlight="orange">Highlighted in orange</p> -->
+
+
+</div>
+
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="parent">
+
+  <div class="controls">
+    <h3>{{ "parent" | translate }}</h3>
+    <div></div>
+    <input [(ngModel)]="parentTxtValue" type="text" class="form-control">
+    <button (click)="onParentButtonClick()" type="button"
+      class="btn btn-primary">{{ "parent_click"| translate }}</button>
+
+    <div class="txt">
+      {{ "value" | translate }} {{childTextBoxValue}}
+    </div>
+  </div>
+
+  <div class="child">
+    <h3>{{ "child" | translate }}</h3>
+    <app-child [parentText]="parentTxtValue" [parentClick]="parentClick" (ontextFromChild)="updateInChildValue($event)">
+    </app-child>
+  </div>
+</div>
